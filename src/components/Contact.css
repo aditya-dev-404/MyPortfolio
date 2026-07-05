@@ -1,0 +1,99 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-bottom: 40px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 20px 40px -24px rgba(77, 141, 255, 0.5);
+}
+
+.contact-card-primary {
+  background: linear-gradient(160deg, rgba(34, 211, 238, 0.12), rgba(77, 141, 255, 0.06));
+  border-color: rgba(77, 141, 255, 0.3);
+}
+
+.contact-label {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--accent-2);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.contact-value {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.contact-cta {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.contact-socials {
+  display: flex;
+  gap: 28px;
+  font-size: 14.5px;
+  font-weight: 500;
+}
+
+.contact-socials a {
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.contact-socials a:hover {
+  color: var(--accent-2);
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 26px 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  color: var(--text-muted);
+  font-size: 13.5px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav a {
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--accent-2);
+}
+
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
