@@ -63,6 +63,7 @@
 /* Visual side */
 .hero-photo-frame {
   display: flex;
+  margin-bottom: 75px;
   justify-content: center;
   align-items: center;
   overflow: visible;
@@ -122,44 +123,43 @@
   max-width: 100%;
   height: auto;
   user-select: none;
-  padding-bottom: 15px;
 
   /* Infinite animated shadow */
-  animation: edgeShadow 6s ease-in-out infinite;
+  animation: edgeShadow 8s ease-in-out infinite;
 }
 
 @keyframes edgeShadow{
 
     0%,100%{
-        filter:drop-shadow(0 -10px 15px rgba(0,255,255,.7));
+        filter:drop-shadow(0 -10px 10px rgba(0,255,255,.7));
     }
 
     12.5%{
-        filter:drop-shadow(8px -8px 15px rgba(0,255,255,.7));
+        filter:drop-shadow(8px -8px 10px rgba(0,255,255,.7));
     }
 
     25%{
-        filter:drop-shadow(10px 0 15px rgba(0,255,255,.7));
+        filter:drop-shadow(10px 0 10px rgba(0,255,255,.7));
     }
 
     37.5%{
-        filter:drop-shadow(8px 8px 15px rgba(0,255,255,.7));
+        filter:drop-shadow(8px 8px 10px rgba(0,255,255,.7));
     }
 
     50%{
-        filter:drop-shadow(0 10px 15px rgba(0,255,255,.7));
+        filter:drop-shadow(0 10px 10px rgba(0,255,255,.7));
     }
 
     62.5%{
-        filter:drop-shadow(-8px 8px 15px rgba(0,255,255,.7));
+        filter:drop-shadow(-8px 8px 10px rgba(0,255,255,.7));
     }
 
     75%{
-        filter:drop-shadow(-10px 0 15px rgba(0,255,255,.7));
+        filter:drop-shadow(-10px 0 10px rgba(0,255,255,.7));
     }
 
     87.5%{
-        filter:drop-shadow(-8px -8px 15px rgba(0,255,255,.7));
+        filter:drop-shadow(-8px -8px 10px rgba(0,255,255,.7));
     }
 }
 .hero-visual {
