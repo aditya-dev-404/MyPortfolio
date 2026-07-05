@@ -61,6 +61,104 @@
 }
 
 /* Visual side */
+.hero-photo-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.hero-photo {
+  width: 380px;
+  max-width: 100%;
+  height: auto;
+  user-select: none;
+
+  /* Infinite animated shadow */
+  animation: edgeShadow 4s ease-in-out infinite;
+}
+
+@keyframes edgeShadow {
+
+  0% {
+    filter:
+      drop-shadow(0 0 6px rgba(0, 180, 255, 0.5))
+      drop-shadow(0 0 18px rgba(0, 180, 255, 0.3));
+  }
+
+  25% {
+    filter:
+      drop-shadow(8px 0 10px rgba(0, 180, 255, 0.6))
+      drop-shadow(12px 0 22px rgba(0, 180, 255, 0.35));
+  }
+
+  50% {
+    filter:
+      drop-shadow(0 8px 12px rgba(0, 180, 255, 0.7))
+      drop-shadow(0 12px 24px rgba(0, 180, 255, 0.4));
+  }
+
+  75% {
+    filter:
+      drop-shadow(-8px 0 10px rgba(0, 180, 255, 0.6))
+      drop-shadow(-12px 0 22px rgba(0, 180, 255, 0.35));
+  }
+
+  100% {
+    filter:
+      drop-shadow(0 -8px 12px rgba(0, 180, 255, 0.5))
+      drop-shadow(0 -12px 24px rgba(0, 180, 255, 0.3));
+  }
+}
+.hero-photo-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.hero-photo {
+  width: 380px;
+  max-width: 100%;
+  height: auto;
+  user-select: none;
+
+  /* Infinite animated shadow */
+  animation: edgeShadow 4s ease-in-out infinite;
+}
+
+@keyframes edgeShadow {
+
+  0% {
+    filter:
+      drop-shadow(0 0 6px rgba(0, 180, 255, 0.5))
+      drop-shadow(0 0 18px rgba(0, 180, 255, 0.3));
+  }
+
+  25% {
+    filter:
+      drop-shadow(8px 0 10px rgba(0, 180, 255, 0.6))
+      drop-shadow(12px 0 22px rgba(0, 180, 255, 0.35));
+  }
+
+  50% {
+    filter:
+      drop-shadow(0 8px 12px rgba(0, 180, 255, 0.7))
+      drop-shadow(0 12px 24px rgba(0, 180, 255, 0.4));
+  }
+
+  75% {
+    filter:
+      drop-shadow(-8px 0 10px rgba(0, 180, 255, 0.6))
+      drop-shadow(-12px 0 22px rgba(0, 180, 255, 0.35));
+  }
+
+  100% {
+    filter:
+      drop-shadow(0 -8px 12px rgba(0, 180, 255, 0.5))
+      drop-shadow(0 -12px 24px rgba(0, 180, 255, 0.3));
+  }
+}
 .hero-visual {
   position: relative;
   display: flex;
@@ -83,7 +181,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain; /* Changed from 'cover' so transparent PNGs don't get cropped */
-  
+  margin-bottom: 10px;
   /* A smooth, multi-layered modern drop shadow */
   filter: drop-shadow(0 8px 12px rgba(0, 6, 93, 0.08)) 
           drop-shadow(0 16px 32px rgba(170, 164, 237, 0.12));

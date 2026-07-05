@@ -47,7 +47,7 @@ function Hero() {
               <img src={profileImage} alt={personalInfo.name} className="hero-photo" />
             ) : (
               <div className="hero-photo-placeholder">
-                <span>Add your photo</span>
+                <span>Aditya's Photo</span>
                 <small>src/assets/profile.jpg</small>
               </div>
             )}
