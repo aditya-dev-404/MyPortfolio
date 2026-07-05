@@ -75,7 +75,7 @@ export const projects = [
       "A portfolio project prioritizing code maintainability through isolated React components and a reusable, structured CSS design system",
     tech: ["React", "Css"],
     github: "https://github.com/aditya-dev-404?tab=repositories",
-    live: "#",
+    live: "https://itsadityakt.netlify.app/",
   },
   {
     id: 4,
