@@ -1,7 +1,4 @@
-// ============================================================
-// All portfolio content lives here. Edit this file to change
-// text/links across the site — components just read from it.
-// ============================================================
+
 
 export const personalInfo = {
   name: "Aditya",
@@ -9,10 +6,10 @@ export const personalInfo = {
   tagline: "I build fast, functional web apps",
   intro:
     "I'm a fresher MERN Full Stack Developer who enjoys turning ideas into clean, working products — from database schema to the last pixel of the UI. Currently sharpening my skills one project at a time.",
-  resumeLink: "#", // TODO: add your resume link/file
+  resumeLink: "#", 
 };
 
-// TODO: replace with your actual college/degree/year details
+
 export const education = [
   {
     id: 1,
@@ -31,7 +28,7 @@ export const education = [
   },
 ];
 
-// icon keys map to techIcons in assets/assets.js. icon: null → renders a text-initial badge.
+
 export const skills = [
   { name: "React", icon: "react" },
   { name: "JavaScript", icon: "javascript" },
@@ -65,7 +62,7 @@ export const projects = [
     description:
       "A MERN authentication system with JWT-based login/register, protected routes, and secure password handling.",
     tech: ["MongoDB", "Express.js", "React", "Node.js", "JWT"],
-    github: "https://github.com/aditya-dev-404?tab=repositories",
+    github: "https://github.com/aditya-dev-404/authentication-system",
     live: "#",
   },
   {
@@ -74,7 +71,7 @@ export const projects = [
     description:
       "A portfolio project prioritizing code maintainability through isolated React components and a reusable, structured CSS design system",
     tech: ["React", "Css"],
-    github: "https://github.com/aditya-dev-404?tab=repositories",
+    github: "https://github.com/aditya-dev-404/MyPortfolio",
     live: "https://itsadityakt.netlify.app/",
   },
   {
@@ -83,8 +80,8 @@ export const projects = [
     description:
       "A React-based e-commerce shopping web app with product listings, cart management, and a responsive storefront UI.",
     tech: ["React", "Redux", "CSS3"],
-    github: "https://github.com/aditya-dev-404?tab=repositories",
-    live: "#",
+    github: "https://github.com/aditya-dev-404/ShopYY",
+    live: "https://aditya-shopyy.netlify.app/",
   },
   {
     id: 5,
@@ -116,7 +113,16 @@ export const projects = [
     description:
       "A movie discovery and selection website built in React, letting users browse and pick movies with a clean card-based UI.",
     tech: ["React", "CSS3"],
-    github: "https://github.com/aditya-dev-404?tab=repositories",
+    github: "https://github.com/aditya-dev-404/MovieSearch",
+    live: "",
+  },
+  {
+    id: 9,
+    title: "Quiz App",
+    description:
+      "its an intresting quiz game where you can play quiz game and get your score out of 10",
+    tech: ["React", "CSS3"],
+    github: "https://github.com/aditya-dev-404/QuizApp",
     live: "",
   },
 ];
@@ -151,7 +157,7 @@ export const certifications = [
 ];
 
 export const contactInfo = {
-  whatsappNumber: "919608712030", // country code + number, no + or spaces
+  whatsappNumber: "919608712030", 
   whatsappDisplay: "+91 9608712030",
   email: "aditya932973@gmail.com",
   github: "https://github.com/aditya-dev-404",
