@@ -54,7 +54,7 @@ export const projects = [
       "A complete MERN-stack blogging platform for recipes with authentication, CRUD posts, and a category-based recipe feed.",
     tech: ["MongoDB", "Express.js", "React", "Node.js"],
     github: "https://github.com/aditya-dev-404/FoodRecipeBlog",
-    live: "#",
+    live: "https://recipesblogap.netlify.app/",
   },
   {
     id: 2,
@@ -123,7 +123,7 @@ export const projects = [
       "its an intresting quiz game where you can play quiz game and get your score out of 10",
     tech: ["React", "CSS3"],
     github: "https://github.com/aditya-dev-404/QuizApp",
-    live: "",
+    live: "https://aditya-dev-404.github.io/QuizApp/",
   },
 ];
 import SigmaDSA from '../assets/tech/SigmaDSA.jpg';
