@@ -40,9 +40,9 @@ function Certifications() {
                 <p className="cert-issuer">
                   {cert.issuer} <span className="dot">•</span> {cert.date}
                 </p>
-                <a href={cert.credentialLink} target="_blank" rel="noreferrer" className="cert-link">
+                {cert.credentialLink && <a href={cert.credentialLink} target="_blank" rel="noreferrer" className="cert-link">
                   View Credential →
-                </a>
+                </a>}
               </div>
             </article>
           ))}

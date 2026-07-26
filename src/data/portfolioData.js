@@ -234,6 +234,6 @@ export const navLinks = [
   { label: "About", to: "about" },
   { label: "Skills", to: "skills" },
   { label: "Projects", to: "projects" },
-  { label: "Certifications", to: "certifications" },
+  { label: "Certs", to: "certifications" },
   { label: "Contact", to: "contact" },
 ];
