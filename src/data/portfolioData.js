@@ -129,6 +129,13 @@ export const projects = [
 import SigmaDSA from '../assets/tech/SigmaDSA.jpg';
 import SigmaWebDev from '../assets/tech/SigmaWebDev.jpg';
 import lc from '../assets/tech/leetcode100days.png';
+import cert2 from '../assets/tech/MsOfficeCert.jpg'
+import cert3 from '../assets/tech/gameOfCodes.jpg'
+import cert4 from '../assets/tech/AdvRoboticsIot.jpg'
+import cert5 from '../assets/tech/PowerBi.jpg'
+import cert6 from '../assets/tech/RoboticsUsingAurdino.jpg'
+import cert7 from '../assets/tech/scholarship.jpg'
+import cert8 from '../assets/tech/techQuiz.jpg'
 export const certifications = [
   {
     id: 1,
@@ -153,7 +160,64 @@ export const certifications = [
     date: "2026",
     image: lc,
     credentialLink: "https://www.linkedin.com/posts/aditya-kumar-787103290_leetcode-dsa-100daysofcode-activity-7457708063991418880-uMH6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZ-pJcBZGZH5koFmmdnUtfxvCtjQfJtYnA",
-  }
+  },
+  {
+    id: 4,
+    title: "Advanced Robotics Iot",
+    issuer: "IEC College",
+    date: "2026",
+    image: cert4,
+    credentialLink: "",
+  },
+  {
+    id: 5,
+    title: "Game of Codes",
+    issuer: "IEC College COE",
+    date: "2026",
+    image: cert3,
+    credentialLink: "",
+  },
+  {
+    id: 6,
+    title: "Ms Office Certifications",
+    issuer: "IEC College COE",
+    date: "2026",
+    image: cert2,
+    credentialLink: "",
+  },
+  {
+    id: 7,
+    title: "Power Bi",
+    issuer: "IEC College COE",
+    date: "2026",
+    image: cert5,
+    credentialLink: "",
+  },
+  {
+    id: 8,
+    title: "Robotics Using Aurdino Uno",
+    issuer: "IEC College COE",
+    date: "2026",
+    image: cert6,
+    credentialLink: "",
+  },
+  {
+    id: 9,
+    title: "Merit Scholarship Certificate",
+    issuer: "IEC College",
+    date: "2026",
+    image: cert7,
+    credentialLink: "",
+  },
+  {
+    id: 10,
+    title: "Tech Quiz",
+    issuer: "IEC Coding Club (Tech Mania)",
+    date: "2026",
+    image: cert8,
+    credentialLink: "",
+  },
+
 ];
 
 export const contactInfo = {
