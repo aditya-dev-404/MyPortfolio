@@ -6,7 +6,7 @@ export const personalInfo = {
   tagline: "I build fast, functional web apps",
   intro:
     "I'm a fresher MERN Full Stack Developer who enjoys turning ideas into clean, working products — from database schema to the last pixel of the UI. Currently sharpening my skills one project at a time.",
-  resumeLink: "#", 
+  resumeLink: "#",
 };
 
 
@@ -49,24 +49,15 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    title: "Food Recipe Blog",
+    title: "Nexify",
     description:
-      "A complete MERN-stack blogging platform for recipes with authentication, CRUD posts, and a category-based recipe feed.",
-    tech: ["MongoDB", "Express.js", "React", "Node.js"],
-    github: "https://github.com/aditya-dev-404/FoodRecipeBlog",
-    live: "https://recipesblogap.netlify.app/",
+      "Nexify is a full-stack professional networking platform where users can create profiles, share posts, connect with others, and interact through likes and comments. It includes real-time updates, notifications, image uploads, secure authentication, and email-based OTP verification.",
+    tech: ["MongoDB", "Express.js", "React", "Node.js", "Socket.io", "Cloudinary"],
+    github: "https://github.com/aditya-dev-404/Nexify",
+    live: "https://nixifyc.netlify.app/",
   },
   {
     id: 2,
-    title: "Auth System",
-    description:
-      "A MERN authentication system with JWT-based login/register, protected routes, and secure password handling.",
-    tech: ["MongoDB", "Express.js", "React", "Node.js", "JWT"],
-    github: "https://github.com/aditya-dev-404/authentication-system",
-    live: "#",
-  },
-  {
-    id: 3,
     title: "My Portfolio",
     description:
       "A portfolio project prioritizing code maintainability through isolated React components and a reusable, structured CSS design system",
@@ -75,7 +66,26 @@ export const projects = [
     live: "https://itsadityakt.netlify.app/",
   },
   {
+    id: 3,
+    title: "Food Recipe Blog",
+    description:
+      "A complete MERN-stack blogging platform for recipes with authentication, CRUD posts, and a category-based recipe feed.",
+    tech: ["MongoDB", "Express.js", "React", "Node.js"],
+    github: "https://github.com/aditya-dev-404/FoodRecipeBlog",
+    live: "https://recipesblogap.netlify.app/",
+  },
+
+  {
     id: 4,
+    title: "WanderLust",
+    description:
+      "A complete MERN-stack blogging platform for recipes with authentication, CRUD posts, and a category-based recipe feed.",
+    tech: ["MongoDB", "Express.js", "React", "Node.js"],
+    github: "https://github.com/aditya-dev-404/wanderLust",
+    live: "https://wanderlust-2ep1.onrender.com/listings",
+  },
+  {
+    id: 5,
     title: "Shopyy",
     description:
       "A React-based e-commerce shopping web app with product listings, cart management, and a responsive storefront UI.",
@@ -83,41 +93,19 @@ export const projects = [
     github: "https://github.com/aditya-dev-404/ShopYY",
     live: "https://aditya-shopyy.netlify.app/",
   },
-  {
-    id: 5,
-    title: "Weather App",
-    description: "A simple weather lookup app fetching live weather data for any city, built with vanilla JS.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    github: "https://github.com/aditya-dev-404?tab=repositories",
-    live: "",
-  },
+
+
   {
     id: 6,
-    title: "To-Do App",
-    description: "A lightweight to-do list app with add, complete, and delete task functionality.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    github: "https://github.com/aditya-dev-404?tab=repositories",
-    live: "",
+    title: "Auth System",
+    description:
+      "A MERN authentication system with JWT-based login/register, protected routes, and secure password handling.",
+    tech: ["MongoDB", "Express.js", "React", "Node.js", "JWT"],
+    github: "https://github.com/aditya-dev-404/authentication-system",
+    live: "#",
   },
   {
     id: 7,
-    title: "Spotify UI Clone",
-    description: "A pixel-focused static clone of the Spotify web player interface, built with pure HTML & CSS.",
-    tech: ["HTML5", "CSS3"],
-    github: "https://github.com/aditya-dev-404?tab=repositories",
-    live: "",
-  },
-  {
-    id: 8,
-    title: "Movie Search ",
-    description:
-      "A movie discovery and selection website built in React, letting users browse and pick movies with a clean card-based UI.",
-    tech: ["React", "CSS3"],
-    github: "https://github.com/aditya-dev-404/MovieSearch",
-    live: "",
-  },
-  {
-    id: 9,
     title: "Quiz App",
     description:
       "its an intresting quiz game where you can play quiz game and get your score out of 10",
@@ -125,10 +113,47 @@ export const projects = [
     github: "https://github.com/aditya-dev-404/QuizApp",
     live: "https://aditya-dev-404.github.io/QuizApp/",
   },
+
+
+  {
+    id: 8,
+    title: "Weather App",
+    description: "A simple weather lookup app fetching live weather data for any city, built with vanilla JS.",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    github: "https://github.com/aditya-dev-404/SimpleWeatherApp",
+    live: "https://aditya-dev-404.github.io/SimpleWeatherApp/",
+  },
+  {
+    id: 9,
+    title: "To-Do App",
+    description: "A lightweight to-do list app with add, complete, and delete task functionality.",
+    tech: ["HTML5", "CSS3", "JavaScript"],
+    github: "https://github.com/aditya-dev-404/ToDo",
+    live: "https://aditya-dev-404.github.io/ToDo/",
+  },
+  {
+    id: 10,
+    title: "SimionSays",
+    description: "A simple Brain memory improving game built using HTML, CSS and JS.",
+    tech: ["HTML5", "CSS3"],
+    github: "https://github.com/aditya-dev-404/SimionSaysGame",
+    live: "https://aditya-dev-404.github.io/SimionSaysGame/",
+  },
+  {
+    id: 11,
+    title: "Movie Search ",
+    description:
+      "A movie discovery and selection website built in React, letting users browse and pick movies with a clean card-based UI.",
+    tech: ["React", "CSS3"],
+    github: "https://github.com/aditya-dev-404/MovieSearch",
+    live: "",
+  },
+
 ];
 import SigmaDSA from '../assets/tech/SigmaDSA.jpg';
 import SigmaWebDev from '../assets/tech/SigmaWebDev.jpg';
 import lc from '../assets/tech/leetcode100days.png';
+import lc from '../assets/tech/leetcode200days.png';
 import cert2 from '../assets/tech/MsOfficeCert.jpg'
 import cert3 from '../assets/tech/gameOfCodes.jpg'
 import cert4 from '../assets/tech/AdvRoboticsIot.jpg'
@@ -147,14 +172,6 @@ export const certifications = [
   },
   {
     id: 2,
-    title: "Data Structures and Algorithms",
-    issuer: "Aapna College",
-    date: "2026",
-    image: SigmaDSA,
-    credentialLink: "https://www.linkedin.com/in/aditya-kumar-787103290/recent-activity/all/",
-  },
-  {
-    id: 3,
     title: "LeeCcode 100 Days Streak",
     issuer: "LeetCode",
     date: "2026",
@@ -162,7 +179,23 @@ export const certifications = [
     credentialLink: "https://www.linkedin.com/posts/aditya-kumar-787103290_leetcode-dsa-100daysofcode-activity-7457708063991418880-uMH6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZ-pJcBZGZH5koFmmdnUtfxvCtjQfJtYnA",
   },
   {
+    id: 3,
+    title: "LeeCcode 200 Days Streak",
+    issuer: "LeetCode",
+    date: "2026",
+    image: lc1,
+    credentialLink: "https://www.linkedin.com/posts/aditya-kumar-787103290_leetcode-dsa-100daysofcode-activity-7457708063991418880-uMH6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZ-pJcBZGZH5koFmmdnUtfxvCtjQfJtYnA",
+  },
+  {
     id: 4,
+    title: "Data Structures and Algorithms",
+    issuer: "Aapna College",
+    date: "2026",
+    image: SigmaDSA,
+    credentialLink: "https://www.linkedin.com/in/aditya-kumar-787103290/recent-activity/all/",
+  },
+  {
+    id: 5,
     title: "Advanced Robotics Iot",
     issuer: "IEC College",
     date: "2026",
@@ -170,7 +203,7 @@ export const certifications = [
     credentialLink: "",
   },
   {
-    id: 5,
+    id: 6,
     title: "Game of Codes",
     issuer: "IEC College COE",
     date: "2026",
@@ -178,7 +211,7 @@ export const certifications = [
     credentialLink: "",
   },
   {
-    id: 6,
+    id: 7,
     title: "Ms Office Certifications",
     issuer: "IEC College COE",
     date: "2026",
@@ -186,7 +219,7 @@ export const certifications = [
     credentialLink: "",
   },
   {
-    id: 7,
+    id: 8,
     title: "Power Bi",
     issuer: "IEC College COE",
     date: "2026",
@@ -194,7 +227,7 @@ export const certifications = [
     credentialLink: "",
   },
   {
-    id: 8,
+    id: 9,
     title: "Robotics Using Aurdino Uno",
     issuer: "IEC College COE",
     date: "2026",
@@ -202,7 +235,7 @@ export const certifications = [
     credentialLink: "",
   },
   {
-    id: 9,
+    id: 10,
     title: "Merit Scholarship Certificate",
     issuer: "IEC College",
     date: "2026",
@@ -210,7 +243,7 @@ export const certifications = [
     credentialLink: "",
   },
   {
-    id: 10,
+    id: 11,
     title: "Tech Quiz",
     issuer: "IEC Coding Club (Tech Mania)",
     date: "2026",
@@ -221,7 +254,7 @@ export const certifications = [
 ];
 
 export const contactInfo = {
-  whatsappNumber: "919608712030", 
+  whatsappNumber: "919608712030",
   whatsappDisplay: "+91 9608712030",
   email: "aditya932973@gmail.com",
   github: "https://github.com/aditya-dev-404",
