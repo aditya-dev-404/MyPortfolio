@@ -1,6 +1,8 @@
 import { techIcons, profileImage } from '../assets/assets';
 import { personalInfo, contactInfo } from '../data/portfolioData';
+import resume from '../assets/tech/Aditya_Resume.pdf'
 import './Hero.css';
+import { MdDownload } from "react-icons/md";
 
 // Tech icons that orbit the profile photo — purely decorative.
 const ORBIT_ICONS = ['react', 'nodejs', 'mongodb', 'express', 'git'];
@@ -23,6 +25,15 @@ function Hero() {
             </a>
             <a href="#contact" className="btn btn-outline">
               Contact Me
+            </a>
+            <a
+              href={resume}
+              download="Aditya_Kumar_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Resume <MdDownload />
             </a>
           </div>
 
