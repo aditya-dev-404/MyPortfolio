@@ -153,7 +153,7 @@ export const projects = [
 import SigmaDSA from '../assets/tech/SigmaDSA.jpg';
 import SigmaWebDev from '../assets/tech/SigmaWebDev.jpg';
 import lc from '../assets/tech/leetcode100days.png';
-import lc1 from '../assets/tech/leetcode200days.png';
+import lc1 from '../assets/tech/Leetcode200.png';
 import cert2 from '../assets/tech/MsOfficeCert.jpg'
 import cert3 from '../assets/tech/gameOfCodes.jpg'
 import cert4 from '../assets/tech/AdvRoboticsIot.jpg'
