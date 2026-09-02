@@ -164,20 +164,12 @@ import cert7 from '../assets/tech/scholarship.jpg'
 import cert8 from '../assets/tech/techQuiz.jpg'
 export const certifications = [
   {
-    id: 4,
-    title: "MERN Stack Development",
-    issuer: "Aapna College",
-    date: "2025",
-    image: SigmaWebDev,
-    credentialLink: "https://www.linkedin.com/in/aditya-kumar-787103290/recent-activity/all/",
-  },
-    {
-    id: 3,
-    title: "LeetCode 50 Days Streak",
+    id: 1,
+    title: "LeeCcode 200 Days Streak",
     issuer: "LeetCode",
     date: "2026",
-    image: lc,
-    credentialLink: "https://leetcode.com/medal/?showImg=0&id=10664454&isLevel=false",
+    image: lc1,
+    credentialLink: "https://www.linkedin.com/posts/aditya-kumar-787103290_leetcode-dsa-100daysofcode-activity-7457708063991418880-uMH6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZ-pJcBZGZH5koFmmdnUtfxvCtjQfJtYnA",
   },
   {
     id: 2,
@@ -188,12 +180,21 @@ export const certifications = [
     credentialLink: "https://www.linkedin.com/posts/aditya-kumar-787103290_leetcode-dsa-100daysofcode-activity-7457708063991418880-uMH6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZ-pJcBZGZH5koFmmdnUtfxvCtjQfJtYnA",
   },
   {
-    id: 1,
-    title: "LeeCcode 200 Days Streak",
+    id: 3,
+    title: "LeetCode 50 Days Streak",
     issuer: "LeetCode",
     date: "2026",
-    image: lc1,
-    credentialLink: "https://www.linkedin.com/posts/aditya-kumar-787103290_leetcode-dsa-100daysofcode-activity-7457708063991418880-uMH6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZ-pJcBZGZH5koFmmdnUtfxvCtjQfJtYnA",
+    image: lc2,
+    credentialLink: "https://leetcode.com/medal/?showImg=0&id=10664454&isLevel=false",
+  },
+
+  {
+    id: 4,
+    title: "MERN Stack Development",
+    issuer: "Aapna College",
+    date: "2025",
+    image: SigmaWebDev,
+    credentialLink: "https://www.linkedin.com/in/aditya-kumar-787103290/recent-activity/all/",
   },
   {
     id: 5,
