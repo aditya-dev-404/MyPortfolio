@@ -154,6 +154,7 @@ import SigmaDSA from '../assets/tech/SigmaDSA.jpg';
 import SigmaWebDev from '../assets/tech/SigmaWebDev.jpg';
 import lc from '../assets/tech/leetcode100days.png';
 import lc1 from '../assets/tech/Leetcode200.png';
+import lc2 from '../assets/tech/leetcode50.png';
 import cert2 from '../assets/tech/MsOfficeCert.jpg'
 import cert3 from '../assets/tech/gameOfCodes.jpg'
 import cert4 from '../assets/tech/AdvRoboticsIot.jpg'
@@ -163,23 +164,31 @@ import cert7 from '../assets/tech/scholarship.jpg'
 import cert8 from '../assets/tech/techQuiz.jpg'
 export const certifications = [
   {
-    id: 1,
+    id: 4,
     title: "MERN Stack Development",
     issuer: "Aapna College",
     date: "2025",
     image: SigmaWebDev,
     credentialLink: "https://www.linkedin.com/in/aditya-kumar-787103290/recent-activity/all/",
   },
+    {
+    id: 3,
+    title: "LeetCode 50 Days Streak",
+    issuer: "LeetCode",
+    date: "2026",
+    image: lc,
+    credentialLink: "https://leetcode.com/medal/?showImg=0&id=10664454&isLevel=false",
+  },
   {
     id: 2,
-    title: "LeeCcode 100 Days Streak",
+    title: "LeetCode 100 Days Streak",
     issuer: "LeetCode",
     date: "2026",
     image: lc,
     credentialLink: "https://www.linkedin.com/posts/aditya-kumar-787103290_leetcode-dsa-100daysofcode-activity-7457708063991418880-uMH6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZ-pJcBZGZH5koFmmdnUtfxvCtjQfJtYnA",
   },
   {
-    id: 3,
+    id: 1,
     title: "LeeCcode 200 Days Streak",
     issuer: "LeetCode",
     date: "2026",
@@ -187,7 +196,7 @@ export const certifications = [
     credentialLink: "https://www.linkedin.com/posts/aditya-kumar-787103290_leetcode-dsa-100daysofcode-activity-7457708063991418880-uMH6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZ-pJcBZGZH5koFmmdnUtfxvCtjQfJtYnA",
   },
   {
-    id: 4,
+    id: 5,
     title: "Data Structures and Algorithms",
     issuer: "Aapna College",
     date: "2026",
@@ -195,7 +204,7 @@ export const certifications = [
     credentialLink: "https://www.linkedin.com/in/aditya-kumar-787103290/recent-activity/all/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Advanced Robotics Iot",
     issuer: "IEC College",
     date: "2026",
@@ -203,7 +212,7 @@ export const certifications = [
     credentialLink: "",
   },
   {
-    id: 6,
+    id: 7,
     title: "Game of Codes",
     issuer: "IEC College COE",
     date: "2026",
@@ -211,7 +220,7 @@ export const certifications = [
     credentialLink: "",
   },
   {
-    id: 7,
+    id: 8,
     title: "Ms Office Certifications",
     issuer: "IEC College COE",
     date: "2026",
@@ -219,7 +228,7 @@ export const certifications = [
     credentialLink: "",
   },
   {
-    id: 8,
+    id: 9,
     title: "Power Bi",
     issuer: "IEC College COE",
     date: "2026",
@@ -227,7 +236,7 @@ export const certifications = [
     credentialLink: "",
   },
   {
-    id: 9,
+    id: 10,
     title: "Robotics Using Aurdino Uno",
     issuer: "IEC College COE",
     date: "2026",
@@ -235,7 +244,7 @@ export const certifications = [
     credentialLink: "",
   },
   {
-    id: 10,
+    id: 11,
     title: "Merit Scholarship Certificate",
     issuer: "IEC College",
     date: "2026",
@@ -243,7 +252,7 @@ export const certifications = [
     credentialLink: "",
   },
   {
-    id: 11,
+    id: 12,
     title: "Tech Quiz",
     issuer: "IEC Coding Club (Tech Mania)",
     date: "2026",
