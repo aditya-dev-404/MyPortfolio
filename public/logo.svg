@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Canvas Gradients -->
+    <radialGradient id="spaceBg" cx="50%" cy="20%" r="90%">
+      <stop offset="0%" stop-color="#0e1738" />
+      <stop offset="45%" stop-color="#080c21" />
+      <stop offset="100%" stop-color="#02040a" />
+    </radialGradient>
+
+    <!-- Deep Glow & Light Effects Behind the Glass -->
+    <radialGradient id="deepGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#1d4ed8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="backAccentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Glass Surface Gradient (Multi-stop for realism) -->
+    <linearGradient id="glassBody" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.32" />
+      <stop offset="25%" stop-color="#60a5fa" stop-opacity="0.15" />
+      <stop offset="65%" stop-color="#1e3a8a" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.5" />
+    </linearGradient>
+
+    <!-- Crisp Outer Rim / Glass Thickness Border -->
+    <linearGradient id="glassBorder" x1="10%" y1="5%" x2="90%" y2="95%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85" />
+      <stop offset="35%" stop-color="#93c5fd" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#1e40af" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Floating 3D "A" Letter Gradients -->
+    <linearGradient id="letterFront" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#bae6fd" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+
+    <linearGradient id="letterExtrusion" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8" />
+      <stop offset="50%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#091e42" />
+    </linearGradient>
+
+    <linearGradient id="letterHighlight" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Primary Top Reflection Flare -->
+    <linearGradient id="topReflect" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Filters for Depth, Inner Shadows, and Blur Effects -->
+    <filter id="shadowApp" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000000" flood-opacity="0.65" />
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0284c7" flood-opacity="0.3" />
+    </filter>
+
+    <filter id="letterShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#030712" flood-opacity="0.75" />
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#1d4ed8" flood-opacity="0.4" />
+    </filter>
+
+    <filter id="blurOrb" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="30" />
+    </filter>
+
+    <clipPath id="squircleClip">
+      <rect x="64" y="64" width="384" height="384" rx="92" />
+    </clipPath>
+  </defs>
+
+  <!-- Base Dark Canvas Background -->
+  <rect width="512" height="512" rx="110" fill="url(#spaceBg)" />
+
+  <!-- Embedded Ambient Backlight Behind App Icon Plate -->
+  <circle cx="256" cy="240" r="160" fill="url(#deepGlow)" filter="url(#blurOrb)" />
+  <circle cx="150" cy="140" r="70" fill="#38bdf8" opacity="0.25" filter="url(#blurOrb)" />
+
+  <!-- Main Glassmorphic Panel Structure -->
+  <g filter="url(#shadowApp)">
+    <!-- Base Plate -->
+    <rect x="64" y="64" width="384" height="384" rx="92" fill="url(#glassBody)" />
+
+    <!-- Frosted Internal Backdrop Tint -->
+    <rect x="64" y="64" width="384" height="384" rx="92" fill="#1e293b" fill-opacity="0.15" />
+  </g>
+
+  <!-- Interior Glass Atmosphere & Internal Reflections (Clipped) -->
+  <g clip-path="url(#squircleClip)">
+    <!-- Inner Ambient Geometry / Luminous Orbs -->
+    <ellipse cx="200" cy="150" rx="140" ry="100" fill="url(#backAccentGlow)" filter="url(#blurOrb)" />
+    <circle cx="360" cy="380" r="110" fill="#1e40af" opacity="0.4" filter="url(#blurOrb)" />
+
+    <!-- Dynamic Curved Glass Sheen / Specular Horizon -->
+    <path d="M 64 64 L 448 64 L 448 210 C 330 260 170 190 64 290 Z" fill="url(#topReflect)" />
+
+    <!-- Diagonal Optical Glare -->
+    <path d="M 90 64 L 160 64 L 64 360 L 64 250 Z" fill="#ffffff" opacity="0.08" />
+
+    <!-- 3D FLOATING "A" CHARACTER -->
+    <g filter="url(#letterShadow)">
+      <!-- 3D Extruded Depth Layers -->
+      <path d="M 233 134 L 279 134 L 379 366 L 333 366 L 308 308 L 204 308 L 179 366 L 133 366 Z M 256 186 L 220 270 L 292 270 Z" 
+            fill="url(#letterExtrusion)" 
+            transform="translate(0, 8)" />
+      
+      <path d="M 233 134 L 279 134 L 379 366 L 333 366 L 308 308 L 204 308 L 179 366 L 133 366 Z M 256 186 L 220 270 L 292 270 Z" 
+            fill="url(#letterExtrusion)" 
+            transform="translate(0, 4)" 
+            opacity="0.8" />
+
+      <!-- Front Surface Face -->
+      <path d="M 233 134 L 279 134 L 379 366 L 333 366 L 308 308 L 204 308 L 179 366 L 133 366 Z M 256 186 L 220 270 L 292 270 Z" 
+            fill="url(#letterFront)" />
+
+      <!-- High-Gloss Specular Rim on Face of "A" -->
+      <path d="M 233 134 L 279 134 L 379 366 L 366 366 L 273 148 L 239 148 L 146 366 L 133 366 Z" 
+            fill="url(#letterHighlight)" />
+
+      <!-- Crossbar Inner Glow -->
+      <line x1="204" y1="307" x2="308" y2="307" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.8" />
+    </g>
+
+    <!-- Secondary Ambient Bottom Refraction -->
+    <ellipse cx="256" cy="450" rx="180" ry="60" fill="#38bdf8" opacity="0.2" filter="url(#blurOrb)" />
+  </g>
+
+  <!-- Beveled Frosted Border (Simulates Refractive Glass Edge) -->
+  <rect x="64" y="64" width="384" height="384" rx="92" 
+        fill="none" 
+        stroke="url(#glassBorder)" 
+        stroke-width="2.5" />
+
+  <!-- Precision Highlight Pip (Corner Glint) -->
+  <ellipse cx="140" cy="80" rx="42" ry="4" transform="rotate(-10 140 80)" fill="#ffffff" opacity="0.7" filter="blur(1px)" />
+</svg>

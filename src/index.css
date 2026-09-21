@@ -1,17 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
 
+/* Softly fades the edges of an image into the background (no hard borders).
+   Tune with [--fade-x:..] [--fade-t:..] [--fade-b:..] on the element. */
+@utility fade-edges {
+  -webkit-mask-image:
+    linear-gradient(to right, transparent, #000 var(--fade-x, 12%), #000 calc(100% - var(--fade-x, 12%)), transparent),
+    linear-gradient(to bottom, transparent, #000 var(--fade-t, 6%), #000 calc(100% - var(--fade-b, 14%)), transparent);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, transparent, #000 var(--fade-x, 12%), #000 calc(100% - var(--fade-x, 12%)), transparent),
+    linear-gradient(to bottom, transparent, #000 var(--fade-t, 6%), #000 calc(100% - var(--fade-b, 14%)), transparent);
+  mask-composite: intersect;
+}
+
+/* ---------- 3D glassmorphism building blocks ----------
+   .glass       frosted panel with bevelled edges + depth shadow
+   .glass-gloss glossy reflection on the top half (pair with `relative`)
+   Optional per-element vars:
+     --glass-tint  background tint     e.g. [--glass-tint:rgba(13,17,34,0.65)]
+     --glass-glow  coloured outer glow e.g. [--glass-glow:0_0_40px_-10px_rgba(124,107,255,0.4)] */
+@utility glass {
+  background-color: var(--glass-tint, rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  backdrop-filter: blur(18px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.25),
+    0 18px 40px -18px rgba(0, 0, 0, 0.7),
+    var(--glass-glow, 0 0 0 0 transparent);
+}
+
+@utility glass-gloss {
+  isolation: isolate;
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.16), transparent 50%);
+    pointer-events: none;
+  }
+}
 :root {
   /* Color tokens */
-  --bg: #090c14;
-  --bg-elevated: #0e1320;
-  --surface: #131a2b;
-  --surface-hover: #182140;
-  --border: #232b42;
-  --text-primary: #e9ecf5;
-  --text-muted: #8993ab;
-  --accent: #4d8dff;
+  --bg: #080a15;
+  --bg-elevated: #0d1122;
+  --surface: #121730;
+  --surface-hover: #1a2145;
+  --border: #262d4d;
+  --text-primary: #eceffa;
+  --text-muted: #8d95b5;
+  --accent: #7c6bff;
   --accent-2: #22d3ee;
-  --accent-soft: rgba(77, 141, 255, 0.12);
+  --accent-soft: rgba(124, 107, 255, 0.14);
   --gradient: linear-gradient(135deg, var(--accent-2), var(--accent));
 
   /* Type */
@@ -24,63 +69,65 @@
   --radius: 14px;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  background: var(--bg);
-  color: var(--text-primary);
-  font-family: var(--font-body);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
+  body {
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
 
-/* subtle ambient grid backdrop across the whole page */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
-  background-size: 48px 48px;
-  pointer-events: none;
-  z-index: 0;
-}
+  /* subtle ambient grid backdrop across the whole page */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    background-size: 48px 48px;
+    pointer-events: none;
+    z-index: 0;
+  }
 
-h1, h2, h3, h4 {
-  font-family: var(--font-display);
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: var(--text-primary);
-}
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-img, svg {
-  display: block;
-  max-width: 100%;
-}
+  img, svg {
+    display: block;
+    max-width: 100%;
+  }
 
-ul {
-  list-style: none;
-}
+  ul {
+    list-style: none;
+  }
 
-button {
-  font-family: inherit;
-  cursor: pointer;
-  border: none;
-  background: none;
+  button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
 }
 
 /* Shared layout utilities used across components */
@@ -144,7 +191,7 @@ button {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px -6px rgba(77, 141, 255, 0.55);
+  box-shadow: 0 8px 24px -6px rgba(124, 107, 255, 0.55);
 }
 
 .btn-outline {

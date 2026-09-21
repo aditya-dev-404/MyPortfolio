@@ -1,0 +1,46 @@
+/* Keyframes used by Tailwind classes in Hero.jsx (animate-[name_...]) */
+
+@keyframes hero-blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+/* Slides a gradient across gradient-clipped text for a glossy shine */
+@keyframes hero-shine {
+  from { background-position: 0% 0; }
+  to { background-position: 200% 0; }
+}
+
+@keyframes hero-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes hero-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes hero-glow {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* Waving hand next to the greeting */
+@keyframes hero-wave {
+  0%, 60%, 100% { transform: rotate(0deg); }
+  10%, 30% { transform: rotate(14deg); }
+  20%, 40% { transform: rotate(-8deg); }
+  50% { transform: rotate(10deg); }
+}
+
+/* Tumbling 3D cube (GlassCube) */
+@keyframes cube-spin {
+  from { transform: rotateX(-25deg) rotateY(0deg); }
+  to { transform: rotateX(335deg) rotateY(360deg); }
+}
+
+/* 3D pop-in for the certificate viewer */
+@keyframes modal-pop {
+  from { opacity: 0; transform: perspective(900px) rotateX(12deg) scale(0.92); }
+  to { opacity: 1; transform: perspective(900px) rotateX(0deg) scale(1); }
+}
