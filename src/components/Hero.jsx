@@ -10,7 +10,7 @@ import { MdDownload } from 'react-icons/md';
 const HeroScene = lazy(() => import('./HeroScene'));
 
 // Typed after the static "I'm" — only these words change.
-const ROLES = ['a Full Stack Developer', 'a MERN Developer', 'a Spring Boot Developer', 'a Problem Solver'];
+const ROLES = ['Full Stack Developer', 'MERN Developer', 'Spring Boot Developer', 'Problem Solver'];
 
 // Tech icons floating around the profile photo — purely decorative.
 const ORBIT_ICONS = [
@@ -112,7 +112,7 @@ function Hero() {
               I'm a Full Stack Developer, MERN Developer, Spring Boot Developer and Problem Solver
             </span>
             <span aria-hidden="true">
-              I'm <TypedText words={ROLES} />
+              I'm a <TypedText words={ROLES} />
             </span>
           </p>
 
