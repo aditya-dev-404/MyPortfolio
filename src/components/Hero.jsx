@@ -44,9 +44,9 @@ function TypedText({ words }) {
 
   useEffect(() => {
     const word = words[index];
-    let delay = deleting ? 45 : 90;
+    let delay = deleting ? 60 : 120;
     if (!deleting && text === word) delay = 1400;
-    if (deleting && text === '') delay = 300;
+    if (deleting && text === '') delay = 400;
 
     const timer = setTimeout(() => {
       if (!deleting && text === word) {

@@ -71,7 +71,7 @@ function Navbar() {
             className={`group flex items-center gap-3 rounded-full pr-2 text-2xl font-bold text-(--text-primary) [font-family:var(--font-display)] ${FOCUS}`}
           >
             <span className="glass-gloss relative grid size-11 place-items-center overflow-hidden rounded-xl bg-[image:var(--gradient)] text-base font-bold text-[#060911] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_6px_16px_-4px_rgba(124,107,255,0.75)] transition-transform duration-700 group-hover:-translate-y-0.5 group-hover:[transform:perspective(200px)_rotateY(360deg)] [font-family:var(--font-mono)]">
-              <IoIosBookmarks />
+              <IoIosBookmarks size={25}/>
             </span>
             {personalInfo.name}
           </a>
