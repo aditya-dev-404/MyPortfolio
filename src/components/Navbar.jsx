@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { personalInfo, navLinks } from '../data/portfolioData';
+import { IoIosBookmarks } from "react-icons/io";
 
 const FOCUS = 'outline-none focus-visible:ring-2 focus-visible:ring-(--accent-2)/60';
 const BAR = 'block h-0.5 w-[18px] rounded-full bg-(--text-primary) transition duration-300';
@@ -70,7 +71,7 @@ function Navbar() {
             className={`group flex items-center gap-3 rounded-full pr-2 text-2xl font-bold text-(--text-primary) [font-family:var(--font-display)] ${FOCUS}`}
           >
             <span className="glass-gloss relative grid size-11 place-items-center overflow-hidden rounded-xl bg-[image:var(--gradient)] text-base font-bold text-[#060911] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_6px_16px_-4px_rgba(124,107,255,0.75)] transition-transform duration-700 group-hover:-translate-y-0.5 group-hover:[transform:perspective(200px)_rotateY(360deg)] [font-family:var(--font-mono)]">
-              {'</'}
+              <IoIosBookmarks />
             </span>
             {personalInfo.name}
           </a>
