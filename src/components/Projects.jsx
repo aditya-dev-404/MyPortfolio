@@ -32,6 +32,7 @@ function Projects() {
         <p className="section-subtitle">
           A mix of MERN-stack apps and front-end builds I've worked on while learning full-stack development.
         </p>
+      <p className="text-xs text-yellow-600 bg-yellow-50 border border-yellow-200 rounded-md px-3 py-2 text-center mb-4">⚠️ These projects runs on a free-tier Render deployment, so services may be slow to start or temporarily unavailable.</p>
 
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6">
           {visibleProjects.map((project) => (
